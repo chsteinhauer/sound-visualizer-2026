@@ -20,10 +20,10 @@ juce_add_plugin(SoundVisualizer
     COPY_PLUGIN_AFTER_BUILD TRUE)     # copies into ~/Library/Audio/Plug-Ins
 
 target_sources(SoundVisualizer PRIVATE
-    Source/SoundProcessor.cpp
-    Source/SoundEditor.cpp)
+    Source/SoundVisualizerProcessor.cpp
+    Source/SoundVisualizerEditor.cpp)
 
-target_compile_definitions(MyPlugin PUBLIC
+target_compile_definitions(SoundVisualizer PUBLIC
     JUCE_WEB_BROWSER=0
     JUCE_USE_CURL=0
     JUCE_VST3_CAN_REPLACE_VST2=0)
